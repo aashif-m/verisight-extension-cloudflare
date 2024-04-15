@@ -20,7 +20,7 @@ Follow the steps below to set up and run the Verisight Backend locally:
 
 # Cloning repository
 
-$  git clone https://github.com/verisight/verisight-backend.git
+$  git clone https://github.com/aashif-m/verisight-extension-cloudflare.git
 
 # Install dependencies
 
@@ -56,7 +56,11 @@ $  npm run build
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](https://github.com/verisight/Verisight-Backend/blob/b220d61c0d54d194e3e1197b89d5b3b962966e13/LICENSE) for more details.
+This project is licensed under the MIT License. See [LICENSE](https://github.com/aashif-m/verisight-extension-cloudflare/blob/3aa7f71cac7e42f0b1e79cddb5d0b8efa6b61b19/LICENSE) for more details.
+
+## Acknowledgements
+
+This project was forked from our main repository from [Verisight](https://github.com/verisight)
 
 ## Support
 

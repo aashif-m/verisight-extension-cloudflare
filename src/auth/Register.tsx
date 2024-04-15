@@ -91,7 +91,7 @@ const Register = () => {
                                 <FormItem>
                                     <FormLabel>Username</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="shadcn" {...field} />
+                                        <Input placeholder="username" {...field} />
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
@@ -104,7 +104,7 @@ const Register = () => {
                                 <FormItem>
                                     <FormLabel>Password</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="shadcn" {...field} type="password"/>
+                                        <Input placeholder="password" {...field} type="password"/>
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>

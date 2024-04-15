@@ -60,6 +60,7 @@ const Incongruence = () => {
           "congruent": { text: "Congruent", color: "text-green-500 fill-green-500" },
           "incongruent": { text: "Incongruent", color: "text-red-500 fill-red-500" },
         };
+        console.log(data);
 
         const predictionData =
           predictionMapping[data.response];
@@ -96,7 +97,7 @@ const Incongruence = () => {
           <CardTitle>Headline Body Congruence</CardTitle>
           <div className="flex h-9 w-full rounded-md border px-3 py-1 items-center justify-center">
             <Circle className={predictionColor} />{" "}
-            <span className="pl-1">Article and Body is {prediction}</span>
+            <span className="pl-1">Headline and Body is {prediction}</span>
           </div>
         </CardContent>
         <CardContent>

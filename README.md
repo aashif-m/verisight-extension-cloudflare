@@ -2,6 +2,8 @@
 
 [Verisight](https://verisightlabs.com/) uses AI and community efforts to help people assess the credibility of news articles. It evaluates the incongruency of articles by analyzing inconsistencies between headlines and the body, provides summaries, and allows users to add notes to provide additional context. It also cross-references articles through AI to show inconsistencies. Its primary objective is to empower users to avoid spreading misinformation.
 
+Note : Extension works only on chromium based browsers
+
 ## Prerequisites
 
 Before running the Verisight Extension locally, ensure you have the following installed:
@@ -34,12 +36,23 @@ $  npm  install
 $  npm run build
 
 ```
+# To Install from source
 
 1.  Open your browser's extension menu
 2.  Enable Developer's mode
 3.  Click on Load unpacked
 4.  Locate the `dist` folder in the project
 5.  Successfully loaded the extension!
+
+# To install pre-built release
+
+1. Download the verisight.zip file from the latest Github release
+2. Extract the verisight.zip fil
+3. Open your browser's extension menu
+4. Enable Developer's mode
+5. Click on Load unpacked
+6. Locate the extracted folder in the project
+7. Successfully load the extension!
 
 ## License
 

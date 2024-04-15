@@ -24,13 +24,9 @@ $  git clone https://github.com/verisight/verisight-backend.git
 
 $  npm  install
 
-# Watch mode
-
-$  npm  run dev
-
 ```
 
-## Browser Debugging and Testing
+## Installation
 
 ```bash
 # Build Project

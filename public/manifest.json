@@ -1,7 +1,7 @@
 {
   "name": "Verisight",
   "description": "Verisight is a browser extension that helps you to verify the authenticity of the news you read on the internet.",
-  "version": "1.0",
+  "version": "1.4",
   "manifest_version": 3,
   "permissions": [
     "activeTab",

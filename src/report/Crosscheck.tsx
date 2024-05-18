@@ -42,6 +42,7 @@ const Crosscheck = () => {
       body: JSON.stringify({
         headline: article.title,
         body: article.content,
+        url: article.link
       }),
     });
     const data: ResponseData = await response.json();

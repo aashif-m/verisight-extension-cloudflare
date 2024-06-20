@@ -44,10 +44,13 @@ const Incongruence = () => {
   useEffect(() => {
     fetch(API + "/incongruence", {
       method: "POST",
-      headers: { "Content-Type": "application/json", "Authorization": "Bearer " + localStorage.getItem('jwt') || "" },
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + localStorage.getItem("jwt") || "",
+      },
       body: JSON.stringify({
         headline: article.title,
-        body: article.content
+        body: article.content,
       }),
     })
       .then((response) => response.json())
@@ -57,20 +60,28 @@ const Incongruence = () => {
         };
 
         const predictionMapping: PredictionMapping = {
-          "congruent": { text: "Consistent", color: "text-green-500 fill-green-500" },
-          "incongruent": { text: "Inconsistent", color: "text-red-500 fill-red-500" },
+          congruent: {
+            text: "Consistent",
+            color: "text-green-500 fill-green-500",
+          },
+          incongruent: {
+            text: "Inconsistent",
+            color: "text-red-500 fill-red-500",
+          },
         };
         console.log(data);
 
-        const predictionData =
-          predictionMapping[data.response];
+        const predictionData = predictionMapping[data.response];
         setPrediction(predictionData.text);
         setPredictionColor(predictionData.color);
       });
 
     fetch(API + "/note/featured/" + article.id, {
       method: "GET",
-      headers: { "Content-Type": "application/json", "Authorization": "Bearer " + localStorage.getItem('jwt') || "" },
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + localStorage.getItem("jwt") || "",
+      },
     })
       .then((response) => response.json())
       .then((note) => {
@@ -95,9 +106,9 @@ const Incongruence = () => {
 
         <CardContent className="space-y-5">
           <CardTitle>Headline Body Consistency</CardTitle>
-          <Circle className={predictionColor} />
+
           <div className="flex h-9 w-full rounded-md border px-3 py-1 items-center justify-center">
-           {" "}
+            <Circle className={predictionColor} />{" "}
             <span className="pl-1 text-[15px]">{prediction}</span>
           </div>
         </CardContent>
